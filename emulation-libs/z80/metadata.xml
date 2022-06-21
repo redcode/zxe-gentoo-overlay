@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<name>Manuel Sainz de Baranda y Goñi</name>
+		<email>manuel@zxe.io</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">redcode/Z80</remote-id>
+		<bugs-to>https://github.com/redcode/Z80/issues</bugs-to>
+	</upstream>
+	<longdescription>
+		The Z80 library implements a fast, small and accurate emulator of
+		the Zilog Z80. It emulates all that is known to date about this CPU, including
+		the undocumented behaviour, MEMPTR, Q and the special RESET.
+	</longdescription>
+</pkgmetadata>
