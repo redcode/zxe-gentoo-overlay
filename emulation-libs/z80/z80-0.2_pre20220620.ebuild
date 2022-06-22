@@ -12,7 +12,7 @@ SRC_URI="https://zxe.io/downloads/Z80-0.2-2022-06-20.tar.xz"
 LICENSE="LGPL-3+"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="static-libs +z80-execute +z80-full_im0 +z80-q +z80-reset_signal z80-special_reset_signal z80-unofficial_reti +z80-zilog_nmos_ld_a_ir_bug"
+IUSE="+static-libs +z80-execute +z80-full_im0 +z80-q +z80-reset_signal z80-special_reset_signal z80-unofficial_reti +z80-zilog_nmos_ld_a_ir_bug"
 
 DEPEND="dev-libs/zeta"
 BDEPEND=""
