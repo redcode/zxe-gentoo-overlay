@@ -7,7 +7,7 @@ inherit cmake multibuild flag-o-matic
 
 DESCRIPTION="Zilog Z80 CPU emulator"
 HOMEPAGE="https://zxe.io/software/Z80"
-SRC_URI="https://zxe.io/downloads/Z80-0.2_pre-2022-06-20.tar.xz"
+SRC_URI="https://zxe.io/download/Z80-0.2_pre-2022-06-20.tar.xz"
 
 LICENSE="LGPL-3+"
 SLOT="0"
