@@ -20,6 +20,8 @@ RDEPEND=""
 
 S="${WORKDIR}/Zeta"
 
+DOCS=(AUTHORS)
+
 src_prepare() {
 	cmake_src_prepare
 }

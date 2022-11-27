@@ -20,6 +20,8 @@ RDEPEND=""
 
 S="${WORKDIR}/Z80"
 
+DOCS=(AUTHORS HISTORY README THANKS)
+
 pkg_setup() {
 	MULTIBUILD_VARIANTS=(shared $(usev static-libs))
 }
