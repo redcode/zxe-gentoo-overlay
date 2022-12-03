@@ -12,7 +12,7 @@ SRC_URI="https://zxe.io/software/Z80/download/Z80-0.2-pre-2022-11-21.tar.xz"
 LICENSE="LGPL-3+"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="+static-libs +z80-execute +z80-full_im0 +z80-q z80-retx_notifications_in_im0 z80-special_reset z80-unofficial_reti +z80-zilog_nmos_ld_a_ir_bug"
+IUSE="+static-libs +z80_execute +z80_full_im0 +z80_q z80_retx_notifications_in_im0 z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
 DEPEND="dev-libs/zeta"
 BDEPEND=""
@@ -42,13 +42,13 @@ src_configure() {
 			-DZ80_WITH_PDF_DOCUMENTATION=NO
 			-DZ80_WITH_STANDARD_DOCUMENTS=NO
 			-DZ80_WITH_TESTS=NO
-			-DZ80_WITH_EXECUTE=$(usex z80-execute)
-			-DZ80_WITH_FULL_IM0=$(usex z80-full_im0)
-			-DZ80_WITH_Q=$(usex z80-q)
-			-DZ80_WITH_RETX_NOTIFICATIONS_IN_IM0=$(usex z80-retx_notifications_in_im0)
-			-DZ80_WITH_SPECIAL_RESET=$(usex z80-special_reset)
-			-DZ80_WITH_UNOFFICIAL_RETI=$(usex z80-unofficial_reti)
-			-DZ80_WITH_ZILOG_NMOS_LD_A_IR_BUG=$(usex z80-zilog_nmos_ld_a_ir_bug)
+			-DZ80_WITH_EXECUTE=$(usex z80_execute)
+			-DZ80_WITH_FULL_IM0=$(usex z80_full_im0)
+			-DZ80_WITH_Q=$(usex z80_q)
+			-DZ80_WITH_RETX_NOTIFICATIONS_IN_IM0=$(usex z80_retx_notifications_in_im0)
+			-DZ80_WITH_SPECIAL_RESET=$(usex z80_special_reset)
+			-DZ80_WITH_UNOFFICIAL_RETI=$(usex z80_unofficial_reti)
+			-DZ80_WITH_ZILOG_NMOS_LD_A_IR_BUG=$(usex z80_zilog_nmos_ld_a_ir_bug)
 		)
 
 		if [[ ${MULTIBUILD_VARIANT} == shared ]]; then
