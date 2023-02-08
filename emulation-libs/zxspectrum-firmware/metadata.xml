@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<name>Manuel Sainz de Baranda y Goñi</name>
+		<email>manuel@zxe.io</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">redcode/Z80</remote-id>
+		<bugs-to>https://github.com/redcode/Z80/issues</bugs-to>
+	</upstream>
+	<longdescription>
+		ZX Spectrum ROM images.
+	</longdescription>
+</pkgmetadata>
