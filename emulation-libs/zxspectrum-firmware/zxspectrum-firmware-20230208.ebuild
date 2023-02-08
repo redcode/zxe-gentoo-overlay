@@ -5,7 +5,7 @@ EAPI=8
  
 DESCRIPTION="ZX Spectrum firmware"
 HOMEPAGE="https://wiki.gentoo.org/wiki/No_homepage"
-SRC_URI="https://zxe.io/depot/ZX%20Spectrum%20Firmware%20%282023-02-08%29.tar.xz -> ${P}.tar.xz"
+SRC_URI="https://zxe.io/depot/ZX%20Spectrum%20-%20Firmware%20%282023-02-08%29.tar.xz -> ${P}.tar.xz"
  
 LICENSE="Sinclair-Firmware"
 SLOT="0"
