@@ -7,12 +7,12 @@ inherit cmake multibuild flag-o-matic
 
 DESCRIPTION="Zilog Z80 CPU emulator"
 HOMEPAGE="https://zxe.io/software/Z80"
-SRC_URI="https://zxe.io/software/Z80/download/Z80-0.2-pre-2023-01-11.tar.xz"
+SRC_URI="https://zxe.io/software/Z80/download/Z80-0.2-pre-2023-02-14.tar.xz"
 
 LICENSE="LGPL-3+"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE="+static-libs +z80_execute +z80_full_im0 +z80_q z80_retx_notifications_in_im0 z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
+IUSE="+static-libs +z80_execute +z80_full_im0 z80_im0_retx_notifications +z80_q z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
 DEPEND="dev-libs/zeta"
 BDEPEND=""
@@ -36,7 +36,7 @@ src_configure() {
 
 	myconfigure() {
 		mycmakeargs+=(
-			-DZ80_DOWNLOAD_TEST_FILES=NO
+			-DZ80_FETCH_TEST_FILES=NO
 			-DZ80_WITH_CMAKE_SUPPORT=YES
 			-DZ80_WITH_HTML_DOCUMENTATION=NO
 			-DZ80_WITH_PDF_DOCUMENTATION=NO
@@ -44,8 +44,8 @@ src_configure() {
 			-DZ80_WITH_TESTS=NO
 			-DZ80_WITH_EXECUTE=$(usex z80_execute)
 			-DZ80_WITH_FULL_IM0=$(usex z80_full_im0)
+			-DZ80_WITH_IM0_RETX_NOTIFICATIONS=$(usex z80_im0_retx_notifications)
 			-DZ80_WITH_Q=$(usex z80_q)
-			-DZ80_WITH_RETX_NOTIFICATIONS_IN_IM0=$(usex z80_retx_notifications_in_im0)
 			-DZ80_WITH_SPECIAL_RESET=$(usex z80_special_reset)
 			-DZ80_WITH_UNOFFICIAL_RETI=$(usex z80_unofficial_reti)
 			-DZ80_WITH_ZILOG_NMOS_LD_A_IR_BUG=$(usex z80_zilog_nmos_ld_a_ir_bug)

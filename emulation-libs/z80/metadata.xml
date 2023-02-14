@@ -17,8 +17,8 @@
 	<use>
 		<flag name="z80_execute">Enable the implementation of the z80_execute function</flag>
 		<flag name="z80_full_im0">Enable full emulation of the interrupt mode 0</flag>
+		<flag name="z80_im0_retx_notifications">Enable optional notifications for any reti or retn instruction executed during the interrupt mode 0 response</flag>
 		<flag name="z80_q">Enable emulation of Q</flag>
-		<flag name="z80_retx_notifications_in_im0">Enable optional notifications for any reti or retn instruction executed during the interrupt mode 0 response</flag>
 		<flag name="z80_special_reset">Enable emulation of the special RESET</flag>
 		<flag name="z80_unofficial_reti">Configure the ED5Dh, ED6Dh and ED7Dh undocumented instructions as reti instead of retn</flag>
 		<flag name="z80_zilog_nmos_ld_a_ir_bug">Enable emulation of the bug affecting the Zilog Z80 NMOS, which causes the P/V flag to be reset when a maskable interrupt is accepted during the execution of the ld a,{i|r} instructions</flag>
