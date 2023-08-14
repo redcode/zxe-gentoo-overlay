@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+static-libs +z80_execute +z80_full_im0 +z80_im0_retx_notifications +z80_q z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
-DEPEND="dev-libs/zeta"
+DEPEND=">=dev-libs/zeta-0.1_pre20230814"
 BDEPEND=""
 RDEPEND=""
 
