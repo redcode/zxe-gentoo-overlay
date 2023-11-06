@@ -35,7 +35,7 @@ src_configure() {
 	append-cflags -fno-stack-protector
 
 	myconfigure() {
-		mycmakeargs+=(
+		mycmakeargs=(
 			-DZ80_FETCH_TEST_FILES=NO
 			-DZ80_WITH_CMAKE_SUPPORT=YES
 			-DZ80_WITH_HTML_DOCUMENTATION=NO
@@ -57,7 +57,6 @@ src_configure() {
 				-DBUILD_SHARED_LIBS=YES
 				-DZ80_WITH_PKGCONFIG_SUPPORT=YES
 			)
-
 		else
 			mycmakeargs+=(
 				-DBUILD_SHARED_LIBS=NO
