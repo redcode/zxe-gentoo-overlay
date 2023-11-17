@@ -7,7 +7,7 @@ inherit unpacker
 
 DESCRIPTION="ZX Spectrum firmware"
 HOMEPAGE="https://wiki.gentoo.org/wiki/No_homepage"
-SRC_URI="https://zxe.io/depot/ZX%20Spectrum%20-%20Firmware%20%282023-02-09%29.7z -> ${P}.7z"
+SRC_URI="https://zxe.io/depot/ZX%20Spectrum%20-%20Firmware%20%282023-11-18%29.7z -> ${P}.7z"
 
 LICENSE="Sinclair-Firmware"
 SLOT="0"
