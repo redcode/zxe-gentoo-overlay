@@ -2,7 +2,7 @@
 
 This is [Gentoo](https://gentoo.org) [overlay](https://wiki.gentoo.org/wiki/Ebuild_repository) for [Manuel](https://github.com/redcode) and [Sofía](https://github.com/agaxia)'s software and other things that our packages depend on. We also maintain a Homebrew [tap](https://github.com/redcode/homebrew-zxe) and our own APT [repository](https://zxe.io/repos).
 
-To add the `zxe` overlay to Portage, type the following as `root`:
+To add this overlay to Portage, type the following as `root`:
 
 ```shell
 eselect repository add zxe git https://github.com/redcode/zxe-gentoo-overlay.git
