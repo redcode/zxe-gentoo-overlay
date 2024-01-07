@@ -1,4 +1,4 @@
-# Copyright 2022 Gentoo Authors
+# Copyright 2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -7,7 +7,7 @@ inherit cmake
 
 DESCRIPTION="Header-only, multi-platform, general purpose library"
 HOMEPAGE="http://zeta.st"
-SRC_URI="http://zeta.st/download/Zeta-0.1-pre-2023-10-20.tar.xz"
+SRC_URI="http://zeta.st/download/Zeta-0.1-pre-2024-01-07.tar.xz"
 
 LICENSE="LGPL-3+"
 SLOT="0"
