@@ -7,7 +7,7 @@ inherit cmake
 
 DESCRIPTION="Header-only, multi-platform, general purpose library"
 HOMEPAGE="http://zeta.st"
-SRC_URI="http://zeta.st/download/Zeta-0.1-pre-2024-01-20.tar.xz"
+SRC_URI="http://zeta.st/download/Zeta-0.1-pre-2024-01-26.tar.xz"
 
 LICENSE="LGPL-3+"
 SLOT="0"
