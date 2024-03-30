@@ -19,7 +19,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND=""
-BDEPEND="verify-sig? ( openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
+BDEPEND="verify-sig? ( sec-keys/openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
 RDEPEND=""
 
 S="${WORKDIR}/Zeta"

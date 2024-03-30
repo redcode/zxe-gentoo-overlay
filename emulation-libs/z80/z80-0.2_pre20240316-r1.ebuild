@@ -19,7 +19,7 @@ KEYWORDS="amd64 x86"
 IUSE="+static-libs +z80_execute +z80_full_im0 +z80_im0_retx_notifications +z80_q z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
 DEPEND=">=dev-libs/zeta-0.1_pre20231020"
-BDEPEND="verify-sig? ( openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
+BDEPEND="verify-sig? ( sec-keys/openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
 RDEPEND=""
 
 S="${WORKDIR}/Z80"
