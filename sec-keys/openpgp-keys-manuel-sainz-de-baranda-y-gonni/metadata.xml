@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<name>Manuel Sainz de Baranda y Goñi</name>
+		<email>manuel@zxe.io</email>
+	</maintainer>
+	<stabilize-allarches/>
+</pkgmetadata>
