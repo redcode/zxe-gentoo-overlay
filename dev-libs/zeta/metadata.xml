@@ -9,4 +9,5 @@
 		<remote-id type="github">redcode/Zeta</remote-id>
 		<bugs-to>https://github.com/redcode/Zeta/issues</bugs-to>
 	</upstream>
+	<stabilize-allarches/>
 </pkgmetadata>
