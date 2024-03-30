@@ -3,11 +3,15 @@
 
 EAPI=8
 
-inherit cmake
+VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/manuel-sainz-de-baranda-y-gonni.asc
+inherit cmake verify-sig
 
 DESCRIPTION="Header-only, multi-platform, general purpose library"
 HOMEPAGE="http://zeta.st"
-SRC_URI="http://zeta.st/download/Zeta-0.1-pre-2024-01-26.tar.xz"
+SRC_URI="
+	http://zeta.st/download/Zeta-0.1-pre-2024-01-26.tar.xz
+	verify-sig? ( http://zeta.st/download/Zeta-0.1-pre-2024-01-26.tar.xz.asc )
+"
 
 LICENSE="LGPL-3+"
 SLOT="0"
@@ -15,7 +19,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND=""
-BDEPEND=""
+BDEPEND="verify-sig? ( openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
 RDEPEND=""
 
 S="${WORKDIR}/Zeta"
