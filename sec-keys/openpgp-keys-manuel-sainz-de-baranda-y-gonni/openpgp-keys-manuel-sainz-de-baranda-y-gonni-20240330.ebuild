@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="OpenPGP keys used by Manuel Sainz de Baranda y Goñi"
 HOMEPAGE="https://zxe.io"
-SRC_URI="https://zxe.io/keys/manuel-pgp-key.public.asc"
+SRC_URI="https://zxe.io/keys/manuel-pgp-key.public.asc -> ${P}.asc"
 S="${WORKDIR}"
 
 LICENSE="public-domain"
@@ -15,5 +15,5 @@ KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv 
 src_install() {
 	local files=( ${A} )
 	insinto /usr/share/openpgp-keys
-	newins - manuel-pgp-key.public.asc < <(cat "${files[@]/#/${DISTDIR}/}" || die)
+	newins - manuel-sainz-de-baranda-y-gonni.asc < <(cat "${files[@]/#/${DISTDIR}/}" || die)
 }
