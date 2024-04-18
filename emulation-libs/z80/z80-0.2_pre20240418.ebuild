@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,8 +9,8 @@ inherit cmake multibuild flag-o-matic verify-sig
 DESCRIPTION="Zilog Z80 CPU emulator"
 HOMEPAGE="https://zxe.io/software/Z80"
 SRC_URI="
-	https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-03-16.tar.xz
-	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-03-16.tar.xz.asc )
+	https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-04-18.tar.xz
+	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-04-18.tar.xz.asc )
 "
 
 LICENSE="LGPL-3+"
@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+static-libs +z80_execute +z80_full_im0 +z80_im0_retx_notifications +z80_q z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
-DEPEND=">=dev-libs/zeta-0.1_pre20231020"
+DEPEND=">=dev-libs/zeta-0.1_pre20240418"
 BDEPEND="verify-sig? ( sec-keys/openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
 RDEPEND=""
 
