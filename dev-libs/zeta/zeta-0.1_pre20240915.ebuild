@@ -9,8 +9,8 @@ inherit cmake verify-sig
 DESCRIPTION="Header-only, multi-platform, general purpose library"
 HOMEPAGE="http://zeta.st"
 SRC_URI="
-	http://zeta.st/download/Zeta-0.1-pre-2024-08-18.tar.xz
-	verify-sig? ( http://zeta.st/download/Zeta-0.1-pre-2024-08-18.tar.xz.asc )
+	http://zeta.st/download/Zeta-0.1-pre-2024-09-15.tar.xz
+	verify-sig? ( http://zeta.st/download/Zeta-0.1-pre-2024-09-15.tar.xz.asc )
 "
 
 LICENSE="LGPL-3+"
