@@ -5,7 +5,7 @@ EAPI=8
 
 DESCRIPTION="OpenPGP keys used by Manuel Sainz de Baranda y Goñi"
 HOMEPAGE="https://zxe.io"
-SRC_URI="https://zxe.io/keys/manuel-pgp-key.public.asc -> ${P}.asc"
+SRC_URI="https://zxe.io/keys/manuel-sainz-de-baranda-y-gonni.public.asc -> ${P}.asc"
 S="${WORKDIR}"
 
 LICENSE="public-domain"
