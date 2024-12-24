@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<name>Sofía Ortega Sosa</name>
+		<email>agaxia@zxe.io</email>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">agaxia/Z80InsnClock</remote-id>
+		<bugs-to>https://github.com/agaxia/Z80InsnClock/issues</bugs-to>
+	</upstream>
+	<longdescription>
+		Z80InsnClock is a small library written in ANSI C that provides T-state level
+		precision to Zilog Z80 emulators. It allows to determine the exact clock cycle
+		within an instruction at which the ongoing M-cycle starts, as well as its
+		duration.
+	</longdescription>
+	<use>
+	</use>
+</pkgmetadata>
