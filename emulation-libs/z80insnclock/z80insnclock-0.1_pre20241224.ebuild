@@ -44,6 +44,7 @@ src_configure() {
 			-DZ80InsnClock_WITH_HTML_DOCUMENTATION=NO
 			-DZ80InsnClock_WITH_PDF_DOCUMENTATION=NO
 			-DZ80InsnClock_WITH_STANDARD_DOCUMENTS=NO
+			-DZ80InsnClock=All
 		)
 
 		if [[ ${MULTIBUILD_VARIANT} == shared ]]; then
