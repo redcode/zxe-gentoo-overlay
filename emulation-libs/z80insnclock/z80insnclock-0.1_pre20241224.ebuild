@@ -13,7 +13,7 @@ SRC_URI="
 	verify-sig? ( https://zxe.io/software/Z80InsnClock/download/Z80InsnClock-0.1-pre-2024-12-24.tar.xz.asc )
 "
 
-LICENSE="LGPL-3+"
+LICENSE="0BSD"
 SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+static-libs"
