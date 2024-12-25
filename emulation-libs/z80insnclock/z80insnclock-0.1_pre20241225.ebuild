@@ -9,8 +9,8 @@ inherit cmake multibuild flag-o-matic verify-sig
 DESCRIPTION="Z80 instruction clock"
 HOMEPAGE="https://zxe.io/software/Z80InsnClock"
 SRC_URI="
-	https://zxe.io/software/Z80InsnClock/download/Z80InsnClock-0.1-pre-2024-12-24.tar.xz
-	verify-sig? ( https://zxe.io/software/Z80InsnClock/download/Z80InsnClock-0.1-pre-2024-12-24.tar.xz.asc )
+	https://zxe.io/software/Z80InsnClock/download/Z80InsnClock-0.1-pre-2024-12-25.tar.xz
+	verify-sig? ( https://zxe.io/software/Z80InsnClock/download/Z80InsnClock-0.1-pre-2024-12-25.tar.xz.asc )
 "
 
 LICENSE="0BSD"
