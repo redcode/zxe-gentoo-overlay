@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -9,8 +9,8 @@ inherit cmake verify-sig
 DESCRIPTION="Header-only, multi-platform, general purpose library"
 HOMEPAGE="http://zeta.st"
 SRC_URI="
-	http://zeta.st/download/Zeta-0.1-pre-2025-01-16.tar.xz
-	verify-sig? ( http://zeta.st/download/Zeta-0.1-pre-2025-01-16.tar.xz.asc )
+	http://zeta.st/download/Zeta-0.1-pre-2025-05-01.tar.xz
+	verify-sig? ( http://zeta.st/download/Zeta-0.1-pre-2025-05-01.tar.xz.asc )
 "
 
 LICENSE="LGPL-3+"
