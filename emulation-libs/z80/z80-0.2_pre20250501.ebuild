@@ -9,8 +9,8 @@ inherit cmake multibuild flag-o-matic verify-sig
 DESCRIPTION="Zilog Z80 CPU emulator"
 HOMEPAGE="https://zxe.io/software/Z80"
 SRC_URI="
-	https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-09-21.tar.xz
-	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2024-09-21.tar.xz.asc )
+	https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-05-01.tar.xz
+	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-05-01.tar.xz.asc )
 "
 
 LICENSE="LGPL-3+"
@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="+static-libs +z80_execute +z80_full_im0 +z80_im0_retx_notifications +z80_q z80_special_reset z80_unofficial_reti +z80_zilog_nmos_ld_a_ir_bug"
 
-DEPEND=">=dev-libs/zeta-0.1_pre20240418"
+DEPEND=">=dev-libs/zeta-0.1_pre20250501"
 BDEPEND="verify-sig? ( sec-keys/openpgp-keys-manuel-sainz-de-baranda-y-gonni )"
 RDEPEND=""
 
@@ -45,7 +45,8 @@ src_configure() {
 			-DZ80_WITH_HTML_DOCUMENTATION=NO
 			-DZ80_WITH_PDF_DOCUMENTATION=NO
 			-DZ80_WITH_STANDARD_DOCUMENTS=NO
-			-DZ80_WITH_TESTS=NO
+			-DZ80_WITH_STEP_TESTING_TOOL=NO
+			-DZ80_WITH_TESTING_TOOL=NO
 			-DZ80_WITH_EXECUTE=$(usex z80_execute)
 			-DZ80_WITH_FULL_IM0=$(usex z80_full_im0)
 			-DZ80_WITH_IM0_RETX_NOTIFICATIONS=$(usex z80_im0_retx_notifications)
