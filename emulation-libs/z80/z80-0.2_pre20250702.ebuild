@@ -9,8 +9,8 @@ inherit cmake multibuild flag-o-matic verify-sig
 DESCRIPTION="Zilog Z80 CPU emulator"
 HOMEPAGE="https://zxe.io/software/Z80"
 SRC_URI="
-	https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-05-02.tar.xz
-	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-05-02.tar.xz.asc )
+	https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-07-02.tar.xz
+	verify-sig? ( https://zxe.io/software/Z80/download/Z80-0.2-pre-2025-07-02.tar.xz.asc )
 "
 
 LICENSE="LGPL-3+"
