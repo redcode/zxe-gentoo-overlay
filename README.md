@@ -1,4 +1,4 @@
-# `zxe` <sub><sub><img src="https://zxe.io/software/Z80/assets/images/gentoo-icon.svg" height="48"></sub></sub> Gentoo Overlay
+# `zxe` <sub><sub><img src="https://zxe.io/software/Z80/assets/images/gentoo-icon.svg" height="48" width="48"></sub></sub> Gentoo Overlay
 
 This is the [Gentoo](https://gentoo.org) [overlay](https://wiki.gentoo.org/wiki/Ebuild_repository) for [Manuel](https://github.com/redcode) and [Sofía](https://github.com/agaxia)'s software and other stuff that our packages depend on. We also maintain a Homebrew [tap](https://github.com/redcode/homebrew-zxe) and our own APT [repository](https://zxe.io/repos).
 
